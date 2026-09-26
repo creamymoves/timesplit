@@ -4,6 +4,8 @@ import type { AppClaims } from '@/types/database';
 
 const PROTECTED: Array<{ prefix: string; role?: 'owner' | 'admin' }> = [
   { prefix: '/dashboard' },
+  { prefix: '/settings' },
+  { prefix: '/notifications' },
   { prefix: '/owner', role: 'owner' },
   { prefix: '/admin', role: 'admin' },
   { prefix: '/api/owner', role: 'owner' },
